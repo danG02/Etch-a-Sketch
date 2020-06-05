@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+#title {
+    text-align: center;
+    font-size: 40px;
+}
+
+#control-box {
+    border: 2px solid black;
+    width: 50%;
+    height: 20%;
+    margin: 0 auto;
+}
+
+#subh {
+    text-align: center;
+}
+
+.btn1 {
+    display: table-cell; 
+    padding-left: 90px;
+
+}
+
+.btn2 {
+    display: table-cell;
+    padding-left: 70px;
+}
+
+.btn3 {
+    display: table-cell;
+    padding-left: 100px;
+}
+
+.btn4 {
+    display: table-cell;
+    padding-left: 80px;
+}
+
+
+#container {
+    display: grid;
+    margin: 50px;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.grid-item {
+    padding: 1em;
+    border: 1px solid black;
+    text-align: center;
+}
